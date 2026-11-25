@@ -1,0 +1,19 @@
+ip access-list extended ACL_nat-source_ip_24
+ remark network name 1
+ permit ip 10.0.0.0 0.0.7.255 10.245.0.128 0.0.0.127
+ permit ip 10.0.0.0 0.0.7.255 10.245.142.0 0.0.0.127
+ remark network name 2
+ permit ip 10.0.0.0 0.0.7.255 10.245.140.32 0.0.0.31
+ remark network name 3
+ permit ip 10.0.0.0 0.0.7.255 10.245.142.128 0.0.0.63
+ permit ip 10.0.0.0 0.0.7.255 10.245.143.0 0.0.0.127
+
+ip access-list extended ACL_nat-other-source_ip_24
+ remark network name 1
+ permit ip host 10.0.7.254 10.245.0.128 0.0.0.127
+ permit ip host 10.0.7.254 10.245.142.0 0.0.0.127
+ remark network name 2
+ permit ip host 10.0.7.254 10.245.140.32 0.0.0.31
+ remark network name 3
+ permit ip host 10.0.7.254 10.245.142.128 0.0.0.63
+ permit ip host 10.0.7.254 10.245.143.0 0.0.0.127
