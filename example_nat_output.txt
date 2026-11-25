@@ -1,0 +1,10 @@
+ip nat outside source static network 11.8.17.128 10.245.0.128 /25
+ip route 10.245.0.128 255.255.255.128 1.1.1.1
+ip nat outside source static network 11.8.16.0 10.245.142.0 /25
+ip route 10.245.142.0 255.255.255.128 1.1.1.1
+ip nat outside source static network 11.9.2.32 10.245.140.32 /27
+ip route 10.245.140.32 255.255.255.224 1.1.1.1
+ip nat outside source static network 11.10.0.0 10.245.143.0 /25
+ip route 10.245.143.0 255.255.255.128 1.1.1.1
+ip nat outside source static network 11.10.31.64 10.245.142.128 /26
+ip route 10.245.142.128 255.255.255.192 1.1.1.1
